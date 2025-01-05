@@ -22,7 +22,7 @@ console.log(Jsuser.email)
 console.log(Jsuser["email"]) 
 //how to access symbol
 
-console.log(Jsuser[mysum])
+console.log(Jsuser[mysum]) 
 
 //how to change value of object
 Jsuser.email = "vinita@gmail.com"
