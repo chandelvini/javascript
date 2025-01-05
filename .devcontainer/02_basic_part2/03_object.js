@@ -1,6 +1,9 @@
  //singleton =>  
 //object.create
-//object LiteraLS => way to declare object
+//object Literals => way to declare object
+//we declare object in two ways 
+//1) using construction which make singleton
+//2) using object literal in this we make object literal
 
 const mysum = Symbol("key1")
 const Jsuser = {
@@ -14,7 +17,7 @@ const Jsuser = {
   
 
 }
-//two ways to access object element 
+//two ways to access object values
 console.log(Jsuser.email)
 console.log(Jsuser["email"]) 
 //how to access symbol
