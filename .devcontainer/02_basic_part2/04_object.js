@@ -71,3 +71,38 @@ console.log(Object.entries(tinderUser));//return key value pair
 //hasownproperty => method used to check whether property is present or not
 
 console.log(tinderUser.hasOwnProperty("name"))
+
+
+// destructuring of object
+
+const course = {
+    name : "javascript",
+    price : 999,
+    mode : "online"
+
+}
+
+//console.log(course.name); // this is a basic way to access a object value
+
+const {name} = course // in this way we dont write to object name we directly access value by their key
+console.log(name)
+
+
+// we want to change the name then
+
+const {name:Name} = course // in this way we dont write to object name we directly access value by their key
+console.log(Name)
+
+
+//JSON format
+// {
+//     "name" : "vinita",
+//     "lastname" : "chandel"
+
+// }
+//differnce between object and json is :
+// json: object has no name is known as json and key also written in "" 
+// object: object has a name
+
+
+
