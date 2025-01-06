@@ -14,7 +14,7 @@
 //      }
 
 //  }
-
+//second type
  function addTwoNumbers(number1,number2) 
  {
    const result =  number1 + number2
@@ -25,6 +25,7 @@
  const result = addTwoNumbers(3, 6) //argument
 // console.log(result)
 
+// with default values
 function loginUserMessage(username = "sam")//default value
 {
     if(username == undefined)
@@ -39,6 +40,7 @@ console.log(login)
 
 console.log(loginUserMessage()) // undefined
 
+//rest operator used when we dont know how many agrument are there
 
 function calculateCartPrice(val1,val2,...num1) {//rest operator
   return num1
@@ -46,6 +48,7 @@ function calculateCartPrice(val1,val2,...num1) {//rest operator
 
 console.log(calculateCartPrice(200,400,500,2)) //val1 = 200 and val2 = 400
 
+// we can pass object to function
 const user = {
   username : "hitesh",
   price : 900
