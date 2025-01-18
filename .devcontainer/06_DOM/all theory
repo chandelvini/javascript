@@ -1,0 +1,40 @@
+/* difference innertext and innercontent and innerhtml
+// ineertext only give visual text 
+innercontent give all content which are present 
+ innerhtml support all html tags */ 
+
+ queryselector :
+ document.queryselector('h1') //it will give first h1 tags from html page
+
+ document.queryselector('#title') // # meaning id 
+ 
+ document.queryselector('.heading')//it will class
+
+   2) queryselectorAll() :
+   it will give nodelist 
+   nodelist only have foreach doest not have map
+   this is the only difference in nodelist and array
+
+for example  :  document.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li 1: li 2: li length: 3[[Prototype]]: NodeList
+
+single access 
+myarr[1].style.color = "blue"
+
+
+// using foreach
+myarr.forEach( (l) => {
+    l.style.color = 'pink'
+})
+
+
+HTMlCollection
+in this foreach is not available
+
+getElementByClassName()  it will give  HTMlCollection
+ so that we have to convert it into array 
+  for that :
+  use 
+  Array.from() so that we have all properties
+// using map 
+  myconarr.map( (li) => {li.style.color = 'pink'})
